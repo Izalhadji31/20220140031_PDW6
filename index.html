@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PDW6</title>
+    <link rel="stylesheet" href="style.css"> <!-- Linking external CSS file -->
+</head>
+<body>
+    <h1>F1zku</h1>
+    <ul>
+        <li>
+            <h2 id="video">Cinematic</h2>
+            <video controls autoplay muted loop width="300" height="500" preload="auto">
+                <source src="media/Cnm.mp4" type="video/mp4"> 
+            </video>
+        </li>
+        <li>
+            <h2 id="audio">Audio Cnm</h2>
+            <audio controls autoplay>
+                <source src="media/enakuen.mp3" type="audio/mp3">
+            </audio>
+        </li>
+        <li class="picture-container">
+            <h2 id="gambar">Gambar</h2>
+            <hr>
+            <picture>
+                <!-- Gambar untuk lebar layar ≤ 600px -->
+                <source media="(max-width: 600px)" srcset="media/f1z.jpg">
+                <!-- Gambar untuk lebar layar > 1200px -->
+                <source media="(max-width: 1200px)" srcset="media/force1.jpg">
+                <!-- Follback jika browser tidak mendukung tag <picture> -->
+                <img src="media/f1z.jpg" alt="pic 1" style="width:auto;">
+            </picture>
+        </li>        
+    </ul>
+    <script src="script.js"></script>
+</body>
+</html>
